@@ -29,7 +29,7 @@ debug.log*
 !/mu-plugins/autoloader.php
 !/themes/
 !/themes/index.php
-!/themes/my-theme
+!/themes/webdevjohn
 
 # Source files
 !.github
@@ -37,6 +37,6 @@ debug.log*
 !composer.json
 !README.md
 !index.php
-!.editorconfig
+!phpstan.neon
 !phpcs.xml
 !.gitignore
