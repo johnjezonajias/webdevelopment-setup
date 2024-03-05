@@ -1,0 +1,42 @@
+# Dependencies
+node_modules
+vendor
+composer.lock
+package-lock.json
+
+# Testing
+
+# Production
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+debug.log*
+
+# Ignore all in the root directory
+/*
+/mu-plugins/*
+/themes/*
+
+# Themes and must-use plugins files and directories
+!/mu-plugins/
+!/mu-plugins/autoloader.php
+!/themes/
+!/themes/index.php
+!/themes/my-theme
+
+# Source files
+!.github
+!package.json
+!composer.json
+!README.md
+!index.php
+!.editorconfig
+!phpcs.xml
+!.gitignore
