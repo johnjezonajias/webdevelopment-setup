@@ -1,0 +1,19 @@
+{
+	"name": "zonryll/theme",
+	"description": "WordPress base theme.",
+	"homepage": "http://webdevjohnajias.one",
+	"authors": [
+		{
+			"name": "John Jezon Ajias",
+			"email": "johnjezonajias@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=7.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"Zonryll\\": "includes/classes/"
+		}
+	}
+}

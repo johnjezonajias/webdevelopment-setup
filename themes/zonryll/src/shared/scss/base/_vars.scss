@@ -1,0 +1,33 @@
+:root {
+	--zonryll--header--height: 6.25rem;
+
+	--wp-preset-shadow--natural: 0 4px 10px 0 rgba(0, 0, 0, 0.05);
+
+	--zonryll--base--spacing-1: 1;
+	--zonryll--base--spacing-2: 1;
+	--zonryll--base--spacing-3: 1;
+	--zonryll--base--spacing-4: 1;
+	--zonryll--base--spacing-5: 1;
+	--zonryll--base--spacing-6: 1;
+	--zonryll--base--spacing-7: 1;
+	--zonryll--base--spacing-8: 1;
+	--zonryll--base--spacing-9: 1;
+	--zonryll--base--spacing-10: 1;
+}
+
+@include media-max-md {
+
+	:root {
+		--zonryll--base--spacing: 0.5;
+		--zonryll--base--spacing-1: 0.5;
+		--zonryll--base--spacing-2: 0.5;
+		--zonryll--base--spacing-3: 0.5;
+		--zonryll--base--spacing-4: 0.5;
+		--zonryll--base--spacing-5: 0.5;
+		--zonryll--base--spacing-6: 0.5;
+		--zonryll--base--spacing-7: 0.5;
+		--zonryll--base--spacing-8: 0.5;
+		--zonryll--base--spacing-9: 0.5;
+		--zonryll--base--spacing-10: 0.5;
+	}
+}
