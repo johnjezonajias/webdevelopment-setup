@@ -7,4 +7,4 @@ parameters:
 	level: max
 	paths:
 		- mu-plugins
-		- themes/webdevjohn
+		- themes/zonryll

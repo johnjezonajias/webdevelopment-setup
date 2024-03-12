@@ -29,11 +29,12 @@
 	<!-- Files and directories to lint -->
 	<!-- <file>mu-plugins/change-this-to-your-plugin-name</file> -->
 	<file>mu-plugins</file>
-	<file>themes/webdevjohn</file>
+	<file>themes/zonryll</file>
 
 	<!-- Include the WordPress ruleset. -->
 	<rule ref="WordPress">
-		<exclude name="Generic.Arrays.DisallowShortArraySyntax.Found" />
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+    	<exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
 		<exclude name="WordPress.PHP.DisallowShortTernary.Found" />
