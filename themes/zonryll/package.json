@@ -1,0 +1,35 @@
+{
+	"name": "@zonryll/theme",
+	"description": "WordPress base theme.",
+	"author": "John Jezon Ajias",
+	"homepage": "http://webdevjohnajias.one",
+	"scripts": {
+		"setup": "composer install",
+		"start": "wp-scripts start",
+		"build": "wp-scripts build",
+		"format": "run-p format:*",
+		"format:css": "stylelint \"src/**/*.scss\" --fix",
+		"format:js": "wp-scripts format",
+		"lint": "run-p lint:*",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js"
+	},
+	"tools": {
+		"entry": {
+			"frontend": "./src/frontend/index.js",
+			"shared": "./src/shared/index.js"
+		}
+	},
+	"devDependencies": {
+		"@wordpress/babel-preset-default": "^7.16.0",
+		"@wordpress/eslint-plugin": "^14.5.0",
+		"@wordpress/scripts": "^26.3.0",
+		"@wordpress/stylelint-config": "^21.15.0",
+		"copy-webpack-plugin": "^11.0.0",
+		"cssnano": "^6.0.1"
+	},
+	"dependencies": {
+		"@fancyapps/ui": "^5.0.10",
+		"swiper": "^9.4.0"
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "Zonryll",
+	"version": "1.0.0",
+	"author": "John Jezon Ajias",
+	"description": "This is a starter block theme.",
+	"tags": [
+		"starter-theme",
+		"boilerplate-theme",
+		"full-site-editing",
+		"fse",
+		"block-theme"
+	],
+	"theme_uri": "https://webdevjohnajias.one/themes",
+	"author_uri": "https://webdevjohnajias.one/",
+	"requires": "6.1",
+	"tested_up_to": "6.2",
+	"requires_php": "7.4",
+	"license": "GPL-2.0-or-later",
+	"license_uri": "http://www.gnu.org/licenses/gpl-2.0.html",
+	"text_domain": "zonryll",
+	"screenshot": "screenshot.png",
+	"template": ""
+}

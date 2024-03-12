@@ -1,0 +1,91 @@
+// Media queries
+@mixin media-sm {
+
+	@media (min-width: ($breakpoint-sm + 0.02px)) {
+		@content;
+	}
+}
+
+@mixin media-md {
+
+	@media (min-width: ($breakpoint-md + 0.02px)) {
+		@content;
+	}
+}
+
+@mixin media-lg {
+
+	@media (min-width: ($breakpoint-lg + 0.02px)) {
+		@content;
+	}
+}
+
+@mixin media-xl {
+
+	@media (min-width: ($breakpoint-xl + 0.02px)) {
+		@content;
+	}
+}
+
+@mixin media-xxl {
+
+	@media (min-width: ($breakpoint-xxl + 0.02px)) {
+		@content;
+	}
+}
+
+@mixin media-max-xs {
+
+	@media (max-width: $breakpoint-xs) {
+		@content;
+	}
+}
+
+@mixin media-max-sm {
+
+	@media (max-width: $breakpoint-sm) {
+		@content;
+	}
+}
+
+@mixin media-max-md {
+
+	@media (max-width: $breakpoint-md) {
+		@content;
+	}
+}
+
+@mixin media-max-lg {
+
+	@media (max-width: $breakpoint-lg) {
+		@content;
+	}
+}
+
+@mixin media-max-xl {
+
+	@media (max-width: $breakpoint-xl) {
+		@content;
+	}
+}
+
+@mixin media-max-xxl {
+
+	@media (max-width: $breakpoint-xxl) {
+		@content;
+	}
+}
+
+@mixin wp-media-max-md {
+
+	@media (max-width: $wp-breakpoint-md) {
+		@content;
+	}
+}
+
+@mixin wp-media-max-sm {
+
+	@media (max-width: $wp-breakpoint-md) {
+		@content;
+	}
+}
