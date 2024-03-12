@@ -1,0 +1,28 @@
+{
+  "name": "@webdevjohnajias/wordpress",
+  "author": "John Jezon Ajias",
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "description": "A base boilerplate for building WordPress project.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnjezonajias/webdevelopment-setup"
+  },
+  "workspaces": [
+    "mu-plugins\\*",
+    "themes\\*"
+  ],
+  "scripts": {
+    "setup": "npm run setup --ws --if-present",
+    "start": "run-p start:*",
+    "start:theme": "npm run start -w @zonryll/theme",
+    "build": "npm run build --ws --if-present",
+    "format": "npm run format --ws --if-present",
+    "lint": "npm run lint --ws --if-present",
+    "generate": "npm run generate --ws --if-present"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "prettier": "npm:wp-prettier@^2.8.5"
+  }
+}

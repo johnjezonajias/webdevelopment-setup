@@ -1,12 +1,17 @@
 # Dependencies
 node_modules
 vendor
+.pnp
+.pnp.js
 composer.lock
 package-lock.json
 
 # Testing
+coverage
 
 # Production
+dist
+build
 
 # Misc
 .DS_Store
@@ -29,7 +34,7 @@ debug.log*
 !/mu-plugins/autoloader.php
 !/themes/
 !/themes/index.php
-!/themes/webdevjohn
+!/themes/zonryll
 
 # Source files
 !.github
@@ -37,6 +42,7 @@ debug.log*
 !composer.json
 !README.md
 !index.php
-!phpstan.neon
+!.editorconfig
 !phpcs.xml
+!phpstan.neon
 !.gitignore
