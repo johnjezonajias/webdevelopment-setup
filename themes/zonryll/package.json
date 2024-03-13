@@ -17,7 +17,8 @@
 	"tools": {
 		"entry": {
 			"frontend": "./src/frontend/index.js",
-			"shared": "./src/shared/index.js"
+			"shared": "./src/shared/index.js",
+			"editor": "./src/editor/index.js"
 		}
 	},
 	"devDependencies": {

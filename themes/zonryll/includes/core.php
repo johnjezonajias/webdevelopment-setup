@@ -16,6 +16,8 @@ function setup(): void {
 	add_action( 'after_setup_theme', __NAMESPACE__ . '\\theme_setup' );
 	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\frontend_styles' );
 	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\frontend_scripts' );
+	add_action( 'enqueue_block_assets', __NAMESPACE__ . '\\editor_styles' );
+	add_action( 'enqueue_block_assets', __NAMESPACE__ . '\\editor_scripts' );
 	add_action( 'wp_head', __NAMESPACE__ . '\\add_favicon', 10 );
 }
 
@@ -71,6 +73,46 @@ function frontend_scripts(): void {
     wp_localize_script( 'frontend', 'siteData', array(
         'baseUrl' => esc_url( home_url( '/' ) )
     ));
+}
+
+/**
+ * Enqueue `editor` styles.
+ */
+function editor_styles(): void {
+	wp_enqueue_style(
+		'shared',
+		ZONRYLL_DIST_URL . '/shared.css',
+		[],
+		Helpers\get_asset( 'shared', 'version' )
+	);
+
+	wp_enqueue_style(
+		'theme-editor',
+		ZONRYLL_DIST_URL . '/editor.css',
+		[],
+		Helpers\get_asset( 'editor', 'version' )
+	);
+}
+
+/**
+ * Enqueue `editor` scripts.
+ */
+function editor_scripts(): void {
+	wp_enqueue_script(
+		'shared',
+		ZONRYLL_DIST_URL . '/shared.js',
+		Helpers\get_asset( 'shared', 'dependencies' ),
+		Helpers\get_asset( 'shared', 'version' ),
+		true
+	);
+
+	wp_enqueue_script(
+		'theme-editor',
+		ZONRYLL_DIST_URL . '/editor.js',
+		Helpers\get_asset( 'editor', 'dependencies' ),
+		Helpers\get_asset( 'editor', 'version' ),
+		true
+	);
 }
 
 /**
