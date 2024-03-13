@@ -29,8 +29,10 @@ if ( file_exists( ZONRYLL_PATH . '/vendor/autoload.php' ) ) {
  */
 require_once ZONRYLL_INC_PATH . '/helpers.php';
 require_once ZONRYLL_INC_PATH . '/core.php';
+require_once ZONRYLL_INC_PATH . '/blocks/core.php';
 
 /**
  * Starts initialization.
  */
 \Zonryll\Core\setup();
+\Zonryll\Blocks\setup();
