@@ -7,6 +7,7 @@
  *
  * @package zonryll
  */
+
 ?>
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide">

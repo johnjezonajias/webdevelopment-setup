@@ -70,9 +70,13 @@ function frontend_scripts(): void {
 		true
 	);
 
-    wp_localize_script( 'frontend', 'siteData', array(
-        'baseUrl' => esc_url( home_url( '/' ) )
-    ));
+	wp_localize_script(
+		'frontend',
+		'siteData',
+		[
+			'baseUrl' => esc_url( home_url( '/' ) ),
+		]
+	);
 }
 
 /**
@@ -119,5 +123,5 @@ function editor_scripts(): void {
  * Add site favicon.
  */
 function add_favicon(): void {
-    echo "<link rel='shortcut icon' href='" . esc_url( ZONRYLL_DIST_URL . '/images/favicon.png' ) . "' />" . "\n";
+	echo "<link rel='shortcut icon' href='" . esc_url( ZONRYLL_DIST_URL . '/images/favicon.png' ) . "' />\n";
 }

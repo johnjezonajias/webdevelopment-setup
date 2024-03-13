@@ -52,6 +52,9 @@ function register_blocks(): void {
 
 /**
  * Register block categories.
+ *
+ * @param array $categories Array of block categories.
+ * @return array Modified array of block categories.
  */
 function register_categories( $categories ) {
 	return array_merge(
