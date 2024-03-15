@@ -65,15 +65,28 @@ This project is a boilerplate for WordPress development.
 
 ## Webpack Linting and Formatting
 To lint and format your code using webpack, you can use the following scripts:
-- Start: Run development server.
-- Build: Build production-ready assets.
-- Format: Format code using stylelint and eslint.
+- Start: Launch the development server to preview your project.
+- Build: Generate production-ready assets for deployment.
+- Lint: Detect and report issues in your code using stylelint and eslint.
+- Format: Automatically format your code according to predefined rules using stylelint and eslint.
 
    ```bash
    npm start
    npm run build
+   npm run lint
    npm run format
 
 These scripts utilize webpack and related plugins for linting and formatting according to the provided configuration.
+
+## PHP Code Linting and Formatting
+Ensure code quality and adherence to coding standards with PHPStan and PHP_CodeSniffer. Utilize the following scripts:
+- Analyze: Execute PHPStan to identify potential bugs and errors.
+- Lint: Use PHP_CodeSniffer to perform linting on PHP files, ensuring conformity to coding standards.
+- Lint:fix: Automatically format PHP code according to coding standards using PHP_CodeSniffer.
+
+   ```bash
+   composer analyze
+   composer lint
+   composer lint:fix
 
 Now you're all set to start developing your WordPress project with the Zonryll theme and its associated dependencies!
